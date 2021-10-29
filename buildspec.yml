@@ -5,7 +5,7 @@ phases:
       - echo Installing source NPM dependencies...
       - npm install
       - npm install -g typescript
-      - npm install node-sass
+      - npm install node-sass@latest
   build:
     commands:
       - echo Build started on `date`
