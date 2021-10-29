@@ -6,11 +6,11 @@ phases:
       - npm install
       - npm install -g typescript
       - npm install node-sass
-      - tsc
   build:
     commands:
       - echo Build started on `date`
       - echo Compiling the dist folder
+      - tsc
       - npm run build
   post_build:
     commands:
