@@ -2,13 +2,14 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - echo Installing source NPM dependencies...
-      - npm install
-      - npm install -g typescript
-      - npm install node-sass
+      - echo Installing source yarn dependencies...
+      - yarn install
+      - yarn install -g typescript
+      - yarn install node-sass
   build:
     commands:
       - echo Build started on `date`
+      - yarn build
       - echo Compiling the dist folder    
   post_build:
     commands:
