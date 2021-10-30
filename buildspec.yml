@@ -5,7 +5,7 @@ phases:
       - echo Installing source yarn dependencies...
       - yarn install
       - yarn global add typescript
-      - yarn install node-sass
+      - yarn add node-sass
   build:
     commands:
       - echo Build started on `date`
