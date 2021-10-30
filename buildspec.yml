@@ -1,22 +1,11 @@
-version: 0.2
+version: 0.1
 phases:
-  pre_build:
+  install:
     commands:
-      - echo Installing source yarn dependencies...
-      - yarn install
+      - npm install -g lerna
   build:
     commands:
-      - echo Build started on `date`
-      - yarn build
-      - echo Compiling the dist folder    
-  post_build:
-    commands:
-      - echo Build completed on `date`
-# Include only the files required for your application to run.
+      - lerna run build --concurrency 4
 artifacts:
   files:
-    - index.js
-    - dist/**/*
-    - request-map.js
-    - credentials.json
-    - node_modules/**/*
+    - "*/"
