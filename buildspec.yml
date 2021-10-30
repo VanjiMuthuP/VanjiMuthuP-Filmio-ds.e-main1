@@ -4,7 +4,7 @@ phases:
     commands:
       - echo Installing source yarn dependencies...
       - yarn install
-      - yarn install -g typescript
+      - yarn global add typescript
       - yarn install node-sass
   build:
     commands:
