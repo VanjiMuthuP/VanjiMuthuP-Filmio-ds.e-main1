@@ -2,13 +2,13 @@ version: 0.2
 phases:
   install:
     commands:
-      - npm install -g lerna
+      - yarn install
   pre_build:
     commands:
-      - lerna --no-ci --concurrency 4
+      - yarn build    
   build:
     commands:
-      - lerna run build --concurrency 4
+      - yarn build storybook
 artifacts:
   files:
     - "*/"
