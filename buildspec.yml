@@ -6,7 +6,7 @@ phases:
       - "yarn install"
   pre_build:
     commands:
-      - "yarn lerna run build" 
+      - 'yarn run build-ts' 
       - yarn build-storybook -o         
   build:
     commands:
