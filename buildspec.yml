@@ -3,6 +3,7 @@ phases:
   install:
     commands:
       - yarn install
+      - yarn add -g typescript
   pre_build:
     commands:
       - CI= yarn run build 
