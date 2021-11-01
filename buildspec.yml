@@ -4,13 +4,7 @@ phases:
   install:
     commands:
       - echo update npm...
-      - npm install -g n
-      - n latest
-      - npm update -g npm
-      - echo node -v
-      - node -v
-      - echo npm -v
-      - npm -v
+      - npm install 
       - echo install yarn...
       - npm install -g yarn
       - echo yarn -v
