@@ -17,7 +17,9 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Compiling the Node.js code
+      - yarn run dev
       - yarn run test
+      - yarn run build
       - echo "build complete"
 artifacts:
   files:
