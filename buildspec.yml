@@ -1,8 +1,7 @@
 version: 0.2
 phases:
   install:
-    commands:
-      - "npm install -g ci.yml"
+    commands:      
       - "npm install -g yarn"
       - "yarn install"
   pre_build:
