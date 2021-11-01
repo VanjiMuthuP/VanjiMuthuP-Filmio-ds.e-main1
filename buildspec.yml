@@ -5,8 +5,8 @@ phases:
       - yarn install
   pre_build:
     commands:
-      - yarn build 
-      - yarn build:storybook         
+      - CI= yarn run build 
+      - yarn build-storybook -o         
   build:
     commands:
       - echo "build complete"
