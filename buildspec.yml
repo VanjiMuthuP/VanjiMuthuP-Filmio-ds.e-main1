@@ -2,11 +2,12 @@ version: 0.2
 phases:
   install:
     commands:
-      - yarn install
-      - yarn add require-typescript
+      - "npm install -g ci.yml"
+      - "npm install -g yarn"
+      - "yarn install"
   pre_build:
     commands:
-      - CI= yarn run build 
+      - "yarn run build" 
       - yarn build-storybook -o         
   build:
     commands:
