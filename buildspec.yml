@@ -5,11 +5,11 @@ phases:
       - yarn install
   pre_build:
     commands:
-      - yarn build storybook
-      - yarn run build    
+      - yarn run build 
+      - yarn build storybook         
   build:
     commands:
-      
+      - echo "build complete"
 artifacts:
   files:
     - "*/"
